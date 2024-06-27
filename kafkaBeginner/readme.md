@@ -22,6 +22,8 @@ Este proyecto contiene ejemplos de configuración y uso de Apache Kafka, incluye
 - **Configuración Básica**: [docs/basic-setup.md](docs/basic-setup.md)
 - **Configuración con CallBack**: [docs/callback-setup.md](docs/callback-setup.md)
 - **Configuración con Custom Serializer/Deserializer**: [docs/custom-serializer-setup.md](docs/custom-serializer-setup.md)
+- **Confluent Platform en Docker**: [docs/confluent-platform-settings.md](docs/confluent-platform-settings.md)
+- **Schema Registry**[docs/schema-registry.md](docs/schema-registry.md)
 
 ## Requisitos
 
