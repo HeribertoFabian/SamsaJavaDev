@@ -5,26 +5,43 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class VehicleGPSData {
 
 	@JsonProperty("ID")
-	private String ID;
+	private int ID;
 	
-	@JsonProperty("Coordinates")
-	private String coordinates;
-	public String getID() {
+	@JsonProperty("Latitude")
+	private double latitude;
+	
+	@JsonProperty("Longitude")
+	private double longitude;
+
+	public int getID() {
 		return ID;
 	}
-	public void setID(String iD) {
+
+	public void setID(int iD) {
 		ID = iD;
 	}
-	public String getCoordinates() {
-		return coordinates;
+
+	public double getLatitude() {
+		return latitude;
 	}
-	public void setCoordinates(String coordinates) {
-		this.coordinates = coordinates;
+
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
 	}
+
+	public double getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+
 	@Override
 	public String toString() {
-		return "VehicleGPSData [ID=" + ID + ", coordinates=" + coordinates + "]";
+		return "VehicleGPSData [ID=" + ID + ", latitude=" + latitude + ", longitude=" + longitude + "]";
 	}
-	
+
+
 	
 }
