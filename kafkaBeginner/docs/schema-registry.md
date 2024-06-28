@@ -1,7 +1,7 @@
 # Configuración usando schema-registry y avro
 
 En este ejemplo veremos como ejecutar la aplicacion conectandonos a Docker en el cual tendremos configurada la plataforma de confluent, por lo cual es importante haber leido la documentación sobre configuracion de Docker
-**Confluent Platform en Docker**: [docs/confluent-platform-settings.md](docs/confluent-platform-settings.md)
+**Confluent Platform en Docker**: [confluent-platform-settings.md](confluent-platform-settings.md)
 
 
 ## Archivos Involucrados
@@ -15,9 +15,11 @@ En este ejemplo veremos como ejecutar la aplicacion conectandonos a Docker en el
 
 1. Asegúrese de que Zookeeper y Kafka estén en ejecución. 
 
-    **Confluent Platform en Docker**: [docs/confluent-platform-settings.md](docs/confluent-platform-settings.md) 
+    **Confluent Platform en Docker**: [confluent-platform-settings.md](confluent-platform-settings.md) 
 
 2. Crear un topic para este ejemplo:
+
+Primero debemos conocer el ID o nombre del container que tiene el kafka
 
 ```bash
 docker ps
@@ -57,4 +59,4 @@ Puedes ejecutar desde tu IDE o bien desde la terminal
 ## ISSUES
 
 Si por alguna razón no puedes conectar tu aplicativo al kafka que está corriendo en docker, entonces tendras que seguir los pasos del archivo
-**Run Project Inside Kafka Image**: [docs/run-project-inside-kafka-image.md](docs/run-project-inside-kafka-image.md) 
+**Run Project Inside Kafka Image**: [run-project-inside-kafka-image.md](run-project-inside-kafka-image.md) 
