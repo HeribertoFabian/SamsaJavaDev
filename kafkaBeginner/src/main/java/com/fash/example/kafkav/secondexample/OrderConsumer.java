@@ -20,7 +20,7 @@ public class OrderConsumer {
 		
 		KafkaConsumer<String,Integer> kafkaConsumer = new KafkaConsumer<>(props);
 		kafkaConsumer.subscribe(Collections.singletonList("OrderTopic"));		
-		ConsumerRecords<String, Integer> orders = kafkaConsumer.poll(Duration.ofSeconds(20));
+		ConsumerRecords<String, Integer> orders = kafkaConsumer.poll(Duration.ofSeconds(60));
 		
 		
 		for(ConsumerRecord<String, Integer> order: orders) {

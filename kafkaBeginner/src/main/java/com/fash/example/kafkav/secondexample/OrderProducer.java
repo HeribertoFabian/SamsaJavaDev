@@ -17,6 +17,7 @@ public class OrderProducer {
 		props.setProperty("bootstrap.servers", "localhost:9092");
 		props.setProperty("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 		props.setProperty("value.serializer", "org.apache.kafka.common.serialization.IntegerSerializer");
+		props.put("retries", 0);
 
 		KafkaProducer<String, Integer> kafkaProducer = new KafkaProducer<String, Integer>(props);
 		ProducerRecord<String, Integer> record = new ProducerRecord<String, Integer>("OrderTopic", "Mac Book Pro", 101);
@@ -37,27 +38,27 @@ public class OrderProducer {
 		/*
 		 * En el siguiente ejemplo se hace un envio sincrono el cual lanza una peticion y espera un objeto Future 
 		 */
-		try {
-			RecordMetadata recordMetadata = kafkaProducer.send(record).get();
-			System.out.println(recordMetadata.partition());
-			System.out.println(recordMetadata.timestamp());
-			System.out.println("Message Sent successfully");
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			kafkaProducer.close();
-		}
-//		
-		/*
-		 * En el siguiente ejemplo se hace un envio asincrono el cual lanza una peticion y espera un objeto Future 
-		 */
 //		try {
-//			kafkaProducer.send(record, new OrderCallBack());
+//			RecordMetadata recordMetadata = kafkaProducer.send(record).get();
+//			System.out.println(recordMetadata.partition());
+//			System.out.println(recordMetadata.timestamp());
+//			System.out.println("Message Sent successfully");
 //		} catch (Exception e) {
 //			e.printStackTrace();
 //		} finally {
 //			kafkaProducer.close();
 //		}
+//		
+		/*
+		 * En el siguiente ejemplo se hace un envio asincrono el cual lanza una peticion 
+		 */
+		try {
+			kafkaProducer.send(record, new OrderCallBack());
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			kafkaProducer.close();
+		}
 		
 	}
 }
