@@ -24,6 +24,7 @@ Este proyecto contiene ejemplos de configuración y uso de Apache Kafka, incluye
 - **Configuración con Custom Serializer/Deserializer**: [docs/custom-serializer-setup.md](docs/custom-serializer-setup.md)
 - **Confluent Platform en Docker**: [docs/confluent-platform-settings.md](docs/confluent-platform-settings.md)
 - **Schema Registry**[docs/schema-registry.md](docs/schema-registry.md)
+- **Custom Partitioner**[docs/custom-partitioner.md](docs/custom-partitioner.md)
 
 ## Requisitos
 
