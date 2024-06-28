@@ -8,6 +8,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 
+import com.example.fash.trackergps.model.VehicleGPSData;
 import com.example.fash.trackergps.serializer.TruckCoordinatesDeserializer;
 
 public class TrackerGPSConsumer {

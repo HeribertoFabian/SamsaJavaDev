@@ -1,0 +1,10 @@
+{
+"namespace":"com.fash.example.kafkav.avro",
+"type":"record",
+"name":"TruckCoordinates",
+"fields":[
+{"name":"ID", "type":"int"},
+{"name":"Latitude", "type":"string"},
+{"name":"Longitude", "type":"string"}
+]
+}

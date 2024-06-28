@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.apache.kafka.common.serialization.Deserializer;
 
-import com.example.fash.trackergps.VehicleGPSData;
+import com.example.fash.trackergps.model.VehicleGPSData;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class TruckCoordinatesDeserializer implements Deserializer<VehicleGPSData> {

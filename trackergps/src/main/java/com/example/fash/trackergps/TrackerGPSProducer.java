@@ -8,6 +8,8 @@ import java.util.Properties;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
+import com.example.fash.trackergps.callbacks.TrackerGPSKafkaCallback;
+import com.example.fash.trackergps.model.VehicleGPSData;
 import com.example.fash.trackergps.serializer.TruckCoordinatesSerializer;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

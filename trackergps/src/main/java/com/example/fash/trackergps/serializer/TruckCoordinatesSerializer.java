@@ -2,7 +2,7 @@ package com.example.fash.trackergps.serializer;
 
 import org.apache.kafka.common.serialization.Serializer;
 
-import com.example.fash.trackergps.VehicleGPSData;
+import com.example.fash.trackergps.model.VehicleGPSData;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

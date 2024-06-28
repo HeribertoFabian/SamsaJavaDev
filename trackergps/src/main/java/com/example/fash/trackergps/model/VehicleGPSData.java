@@ -1,4 +1,4 @@
-package com.example.fash.trackergps;
+package com.example.fash.trackergps.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

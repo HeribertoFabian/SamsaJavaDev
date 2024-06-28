@@ -1,4 +1,4 @@
-package com.example.fash.trackergps;
+package com.example.fash.trackergps.callbacks;
 
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.RecordMetadata;
